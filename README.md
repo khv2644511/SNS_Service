@@ -6,3 +6,12 @@
 
 새롭게 mount 되게 하고 싶을 때 -> template.tsx
 리렌더링이 되지 않게 하고 싶을 때 -> layout.tsx
+
+## Parallel Routes
+
+Parallel Routes는 동일한 레이아웃 내에서 하나 이상의 페이지를 동시에 또는 조건부로 렌더링 할 수 있는 방법.
+
+슬롯을 사용해 병렬로 페이지를 렌더링 하는데, 슬롯 규칙은 폴더 앞에 '@'를 사용한다.
+
+![Alt text](image-1.png)
+슬롯으로 사용될 modal과 layout.tsx는 같은 폴더 안에 있어야 에러가 나지 않는다.
