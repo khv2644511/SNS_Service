@@ -25,3 +25,15 @@ Next의 모든 컴포넌트는 서버 컴포넌트이다.
 ## default.tsx
 
 Paraller Route의 기본값
+
+## Intercepting Routes
+
+현재 레이아웃 안에서 라우트를 로드하면서 현재 페이지의 컨텍스트를 유지할 수 있게 해주는 방법
+
+예를 들어, 피드에서 사진을 클릭했을 때, 오버레이된 피드 위에 사진을 모달로 띄울 수 있다.
+
+** 컨벤션 **
+가로채려는 폴더가 같은 레벨에 있는 `i/flow/login` 이라면
+intecepting routes는 `(.)i/flow/login` 이렇게 작성하면 된다.
+
+Link를 통해서 url에 접근하는 경우 intercept가 발생하여 `(.)i/flow/login`가 렌더링되고, 브라우저에 직접 url을 치거나, 새로고침하면 기존의 `i/flow/login` 가 렌더링된다.
