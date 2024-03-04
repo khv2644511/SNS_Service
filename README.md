@@ -37,3 +37,8 @@ Paraller Route의 기본값
 intecepting routes는 `(.)i/flow/login` 이렇게 작성하면 된다.
 
 Link를 통해서 url에 접근하는 경우 intercept가 발생하여 `(.)i/flow/login`가 렌더링되고, 브라우저에 직접 url을 치거나, 새로고침하면 기존의 `i/flow/login` 가 렌더링된다.
+
+## Private folder
+
+** 컨벤션 **
+`_folder` 이런식으로 작성하면 이 폴더는 route로 생성되지 않는다. @modal/(.)i/flow/login과 i/flow/login에 공통된 로직을 `_component` 폴더로 분리한다.
