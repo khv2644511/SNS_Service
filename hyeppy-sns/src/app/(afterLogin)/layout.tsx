@@ -3,6 +3,8 @@ import style from '@/app/(afterLogin)/layout.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import ZLogo from '../../../public/hyepLogo.png';
+import NavMemu from '@/app/(afterLogin)/_component/NavMenu';
+import LogoutButton from './_component/LogoutButton';
 export default function AfrerLoginLayout({ children }: { children: ReactNode }) {
     return (
         <div className={style.container}>
@@ -14,15 +16,15 @@ export default function AfrerLoginLayout({ children }: { children: ReactNode }) 
                                 <Image src={ZLogo} alt="z.com로고" width={40} height={40} />
                             </div>
                         </Link>
-                        {/* <nav>
+                        <nav>
                             <ul>
-                                <NavMenu />
+                                <NavMemu />
                             </ul>
                             <Link href="/compose/tweet" className={style.postButton}>
                                 게시하기
                             </Link>
                         </nav>
-                        <LogoutButton /> */}
+                        <LogoutButton />
                     </div>
                 </section>
             </header>
