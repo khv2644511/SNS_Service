@@ -15,7 +15,6 @@
     width: 275px;
     height: 100dvh;
     background-color: yellow;
-
 }
 
 .leftSectionFixed {
@@ -48,7 +47,7 @@
     align-items: center;
 }
 .logoPill:hover {
-    background-color: rgba(15,20,25, 0.1);
+    background-color: rgba(15, 20, 25, 0.1);
 }
 
 .postButton {
@@ -84,21 +83,19 @@
     width: 990px;
     display: flex;
     justify-content: space-between;
-    background-color: blue;
-
+    /* background-color: blue; */
 }
 
 .main {
     width: 600px;
     height: 200dvh;
     background-color: white;
-
 }
 
 .rightSection {
     width: 350px;
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .search {

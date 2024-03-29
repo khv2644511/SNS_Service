@@ -5,6 +5,9 @@ import Image from 'next/image';
 import ZLogo from '../../../public/hyepLogo.png';
 import NavMemu from '@/app/(afterLogin)/_component/NavMenu';
 import LogoutButton from './_component/LogoutButton';
+import TrendSection from './_component/TrendSection';
+import FollowRecommend from './_component/FollowRecommend';
+
 export default function AfrerLoginLayout({ children }: { children: ReactNode }) {
     return (
         <div className={style.container}>
@@ -42,13 +45,13 @@ export default function AfrerLoginLayout({ children }: { children: ReactNode }) 
                                 <input type="search" />
                             </form>
                         </div>
-                        {/* <TrendSection /> */}
-                        {/* <div className={style.followRecommend}>
+                        <TrendSection />
+                        <div className={style.followRecommend}>
                             <h3>팔로우 추천</h3>
                             <FollowRecommend />
                             <FollowRecommend />
                             <FollowRecommend />
-                        </div> */}
+                        </div>
                     </section>
                 </div>
             </div>
