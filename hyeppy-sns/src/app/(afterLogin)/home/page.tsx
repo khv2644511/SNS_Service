@@ -1,8 +1,16 @@
-import style from './home.module.css'
+import style from './home.module.css';
+
+import Tab from './_component/Tab';
+import TabProvider from './_component/TabProvier';
 
 export default function Home() {
     return (
-      <main  className={style.main}>홈페이지
-      </main>
-    )
-  }
+        <main className={style.main}>
+            <TabProvider>
+                <Tab />
+                {/* <PostFrom /> */}
+                {/* <Post /> */}
+            </TabProvider>
+        </main>
+    );
+}

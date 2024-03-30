@@ -14,7 +14,7 @@
 .leftSection {
     width: 275px;
     height: 100dvh;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .leftSectionFixed {
