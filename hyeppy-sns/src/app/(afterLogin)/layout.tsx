@@ -8,7 +8,10 @@ import LogoutButton from './_component/LogoutButton';
 import TrendSection from './_component/TrendSection';
 import FollowRecommend from './_component/FollowRecommend';
 
-export default function AfrerLoginLayout({ children }: { children: ReactNode }) {
+type Props = {
+    children: ReactNode, modal : ReactNode
+}
+export default function AfrerLoginLayout({children, modal} :Props) {
     return (
         <div className={style.container}>
             <header className={style.leftSectionWrapper}>
@@ -55,6 +58,7 @@ export default function AfrerLoginLayout({ children }: { children: ReactNode }) 
                     </section>
                 </div>
             </div>
+        {modal}
         </div>
     );
 }
